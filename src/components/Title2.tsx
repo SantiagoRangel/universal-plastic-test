@@ -1,5 +1,3 @@
-import React from "react"
-
 interface Title2Props {
   text: string
 }
