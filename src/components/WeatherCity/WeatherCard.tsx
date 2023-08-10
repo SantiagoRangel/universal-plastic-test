@@ -21,18 +21,18 @@ export default function WeatherCard({ data, cityName }: WeatherCardProps) {
   }
   return (
     <div className="w-full h-62 p-4 rounded-lg border border-sky-400 ">
-      <div className="flex  gap-3">
+      <div className="flex gap-3">
         <div className="w-12 h-12 border-gray border-2 rounded-full">
           <img
             className="w-9 mt-1 ml-1"
-            src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`}
+            src={`https://openweathermap.org/img/w/${data.weather[0].icon}.png`}
           />
         </div>
-        <div>
+        <div className="mt-1">
           <Label text="WEATHER" />
           <p>{data.weather[0].main} </p>
         </div>
-        <div>
+        <div className="mt-1">
           <Label text="DESCRIPTION" />
           <p>{data.weather[0].description} </p>
         </div>
