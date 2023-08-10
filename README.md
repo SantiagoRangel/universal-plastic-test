@@ -7,3 +7,5 @@ Please add a `.env` file containing the api key.
 
 run `yarn install`
 run `yarn run dev`
+
+The deployed version is in the following url: `https://universal-plastic-test.vercel.app/`
