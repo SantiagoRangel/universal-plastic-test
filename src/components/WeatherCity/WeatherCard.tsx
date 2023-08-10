@@ -38,7 +38,7 @@ export default function WeatherCard({ data, cityName }: WeatherCardProps) {
         </div>
       </div>
       <div className="w-ful mt-3 h-px border border-sky-200"></div>
-      <div className="flex gap-10 mt-3">
+      <div className="flex gap-8 mt-3">
         <div>
           <Label text="SUNSET" />
           <p>{`${sunset.getHours()}:${sunset.getMinutes()}`} </p>
@@ -61,7 +61,7 @@ export default function WeatherCard({ data, cityName }: WeatherCardProps) {
         </div>
       </div>
 
-      <div className="flex gap-10 mt-3">
+      <div className="flex gap-5 mt-3">
         <div>
           <Label text="TEMPERATURE" />
           <p>{kelvinToCelsius(data.main.temp)} </p>
