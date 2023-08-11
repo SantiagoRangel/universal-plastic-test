@@ -70,18 +70,6 @@ export default function WeatherCard({ data, cityName }: WeatherCardProps) {
           <Label text="FEELS LIKE" />
           <p>{kelvinToCelsius(data.main.feels_like)} </p>
         </div>
-        <div>
-          <Label text="LOCATION " />
-          <div
-            className="flex gap-1 hover:cursor-pointer"
-            onClick={() => {
-              openGoogleMaps()
-            }}
-          >
-            <img className="w-4" src="/map-pin-black.svg" />
-            <p> {cityName}</p>
-          </div>
-        </div>
       </div>
       <div className="mt-2 ">
         <p className="text-xs text-right text-gray-500">
